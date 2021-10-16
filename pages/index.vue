@@ -7,6 +7,7 @@
     <about />
     <advantages />
     <callback />
+    <contacts />
   </div>
 </template>
 
@@ -18,9 +19,11 @@ import EQuote from '~/components/e-quote'
 import About from '~/components/about'
 import Advantages from '~/components/advantages'
 import Callback from '~/components/callback'
+import Contacts from '~/components/contacts'
 
 export default {
   components: {
+    Contacts,
     Callback,
     Advantages,
     About,
