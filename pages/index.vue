@@ -1,7 +1,13 @@
 <template>
-  <div class="main-page"> . </div>
+  <div class="main-page">
+    <hero />
+  </div>
 </template>
 
 <script>
-export default {}
+import Hero from '~/components/hero'
+
+export default {
+  components: { Hero }
+}
 </script>
