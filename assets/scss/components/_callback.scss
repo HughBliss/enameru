@@ -1,0 +1,57 @@
+.callback {
+  background: url("~assets/images/callback.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 0;
+  margin: 0;
+
+  position: relative;
+  color: #fff;
+
+  .section__title {
+    color: #fff
+  }
+
+  .section__description {
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #000000aa;
+  }
+
+  &__form {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    height: 56px;
+    border: none;
+    padding: 0 20px;
+  }
+
+  &__submit {
+    border-radius: 7px;
+    width: 100%;
+    padding: 0 20px;
+    background: $--primary;
+    border: none;
+    height: 56px;
+    color: #fff;
+    font-size: 16px;
+
+  }
+}
