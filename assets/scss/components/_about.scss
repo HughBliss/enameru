@@ -1,0 +1,43 @@
+.about {
+
+  background: url("~assets/images/factory.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 0;
+  margin: 0;
+
+  color: #fff;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #00000077;
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 100;
+    max-width: 680px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+}
