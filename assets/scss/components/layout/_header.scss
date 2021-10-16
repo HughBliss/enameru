@@ -1,0 +1,123 @@
+.header {
+  background: $--primary;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+
+
+  &__menu-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    background: $--primary;
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    margin: -15px;
+
+
+    @media screen and (max-width: 992px) {
+      position: absolute;
+      display: none;
+      left: 50%;
+      transform: translate(-50%);
+      flex-direction: column;
+      align-items: center;
+      &--one {
+        top: 100px;
+      }
+      &--two {
+        top: 244px;
+      }
+    }
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  &__list-item {
+    margin: 15px;
+    color: #fff;
+
+    a {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &__logo {
+
+    img {
+      height: 97px;
+    }
+  }
+
+  &__menu-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: none;
+    z-index: 1000;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+
+    span, &:before, &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      display: block;
+      background: #fff;
+      height: 2px;
+      width: 30px;
+      //transform-origin: center center;
+
+    }
+
+    span {
+      transform: translate(-50%, -50%);
+    }
+
+    &:before {
+      transform: translate(-50%, calc(-50% - 10px));
+    }
+
+    &:after {
+      transform: translate(-50%, calc(-50% + 10px));
+    }
+
+    &--opened {
+      span {
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      &:before {
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      &:after {
+        transform: translateX(-50%) rotate(45deg);
+      }
+    }
+  }
+}
