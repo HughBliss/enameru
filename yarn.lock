@@ -6657,6 +6657,11 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
+number-precision@^1.5.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/number-precision/-/number-precision-1.5.1.tgz#ea343990409d873464074353fcb30ac105a90e61"
+  integrity sha512-JdTfhUHd1aUL4svSaJXlv3CKNz92js2z0+HS/9AX8euw+akompBz/QEZ7e3y7eTuJxvRqXBZP6mapUlTtLoTsA==
+
 nuxt@^2.15.7:
   version "2.15.8"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.15.8.tgz#946cba46bdaaf0e3918aa27fd9ea0fed8ed303b0"
@@ -7148,6 +7153,14 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postcss-aspect-ratio-polyfill@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-aspect-ratio-polyfill/-/postcss-aspect-ratio-polyfill-1.0.0.tgz#422ff96e7dc7056acf345288ae9f949fe7e32308"
+  integrity sha512-7IBKuip2tvksMcZy/sdiVVrUjE5Fc5ovKxnNxae08CGqqUYddJUKKPB+oP9WbpOS87bQ2HxBi1PrSNMqNPcwtg==
+  dependencies:
+    number-precision "^1.5.0"
+    postcss "^7.0.32"
 
 postcss-attribute-case-insensitive@^4.0.1:
   version "4.0.2"

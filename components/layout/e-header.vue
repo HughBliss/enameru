@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-show="isMenuOpen" class="header__menu-screen"/>
+    <div v-show="isMenuOpen" class="header__menu-screen" />
     <div class="header">
       <div class="container">
         <nav class="header__nav">
@@ -9,7 +9,7 @@
             class="header__menu-button"
             @click="toggleMenu"
           >
-            <span/>
+            <span />
           </button>
           <ul class="header__list header__list--one" :class="{'header__list--open': isMenuOpen}">
             <li class="header__list-item">
